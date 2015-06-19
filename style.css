@@ -1,0 +1,101 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+}
+body *{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.page {
+    position: relative;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.page .card{
+    width: 210mm;
+    height: 148mm;
+}
+
+.page .card .front, .page .card .back {
+    width: 105mm;
+    height: 148mm;
+    float: left;
+}
+
+.page .card .front img {
+    width: 100%;
+    height: 100%;
+}
+
+.page .card .back {
+    padding: 20px;
+    overflow: hidden;
+}
+.page .card .back .content {
+    font-size: 12px;
+    padding-top: 25px;
+}
+.page .card .back h3, .page .card .back h5, .page .card .back h1 {
+    text-align: center;
+}
+.page .card .back .thanks {
+    margin: 0;
+}
+.page .card .back .thanks.en {
+    margin-top: 40px;
+}
+
+.page .card .back .code-text {
+    margin: 0;
+}
+.page .card .back .code-text.en {
+    margin-top: 40px;
+}
+.page .card .back .instructions-title.en {
+    text-align: left;
+    margin-top: 50px;
+}
+.page .card .back .instructions-title.de {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.de {
+    color: darkred;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
