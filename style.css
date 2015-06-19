@@ -74,6 +74,12 @@ body *{
     color: darkred;
 }
 
+.image-container {
+    width: 105mm;
+    height: 148mm;
+    padding: 4mm;
+}
+
 @page {
     size: A4;
     margin: 0;
