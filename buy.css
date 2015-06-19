@@ -26,6 +26,9 @@
 .about-us{
     background-color: #d9576a;
     text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 .about-us h1{
     text-align: center;
